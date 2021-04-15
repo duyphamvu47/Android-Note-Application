@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:background="@color/purple_500"
+    android:elevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/toolBar_searchMenu_deleteItemBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/toolBar_searchMenu_hideItemBtn"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_baseline_delete_24"
+            android:clickable="true"/>
+
+
+        <ImageView
+            android:id="@+id/toolBar_searchMenu_hideItemBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_auto_fix_high_24_green"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:clickable="true"/>
+
+    </RelativeLayout>
+
+</androidx.appcompat.widget.Toolbar>
